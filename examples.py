@@ -1,3 +1,4 @@
+#example number one:
 n=int(input("enter the number of elements:"))
 a=[]
 for i in range(0,n):
@@ -6,3 +7,4 @@ for i in range(0,n):
 avg=sum(a)/n
 print("average number is:",round(avg,2))
 
+#ex.#2:
