@@ -91,4 +91,11 @@ for i in range(lower, upper+1):
     if (i%2!=0):
         print(i)
         
-#11)
+#11)The program takes in a number and finds the sum of digits in a number:
+n=int(input("enter the number:"))
+tot=0
+while (n>0):
+    dig=n%10
+    tot=tot+dig
+    n=n//10
+print("sum of the digits of number is:",tot)
