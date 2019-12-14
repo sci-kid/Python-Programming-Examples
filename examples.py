@@ -100,7 +100,7 @@ while (n>0):
     n=n//10
 print("sum of the digits of number is:",tot)
 
-#11)The program takes in an integer and prints the smallest divisor of the integer:
+#12)The program takes in an integer and prints the smallest divisor of the integer:
 n=int(input("enter the number, which will be divisible:"))
 a=[]
 for i in range (2,n+1):
@@ -109,4 +109,23 @@ for i in range (2,n+1):
 a.sort()
 print("the smallest number, which is divisible, is:",a[0])
 
-#12)
+#13)The program takes the number and prints the number of digits in the number:
+n=int(input("enter the number:"))
+count=0
+while (n>0):
+    count = count + 1
+    n = n//10
+print("the number of digits in number is:", count)
+
+#14)The program takes a number and checks whether it is a palindrome or not:
+n=int(input("enter the number:"))
+temp=n
+rev=0
+while (n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if (temp==rev):
+    print("the number is a palindrome")
+else:
+    print("the number isn't a palindrome")
