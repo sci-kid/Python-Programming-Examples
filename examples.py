@@ -99,3 +99,14 @@ while (n>0):
     tot=tot+dig
     n=n//10
 print("sum of the digits of number is:",tot)
+
+#11)The program takes in an integer and prints the smallest divisor of the integer:
+n=int(input("enter the number, which will be divisible:"))
+a=[]
+for i in range (2,n+1):
+    if (n%i==0):
+        a.append(i)
+a.sort()
+print("the smallest number, which is divisible, is:",a[0])
+
+#12)
