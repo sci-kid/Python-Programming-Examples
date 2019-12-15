@@ -129,3 +129,10 @@ if (temp==rev):
     print("the number is a palindrome")
 else:
     print("the number isn't a palindrome")
+
+#15)The program prints all integers that aren’t divisible by either 2 or 3 and lies between 1 and 50:
+for i in range(0,51):
+    if(i%2!=0&i%3!=0):
+        print(i)
+
+#16)
