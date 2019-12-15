@@ -135,4 +135,9 @@ for i in range(0,51):
     if(i%2!=0&i%3!=0):
         print(i)
 
-#16)
+#16)The program takes a number and generates all the divisors of the number:
+n=int(input("enter the integer:"))
+print("the divisors of the integer are:")
+for i in range(1, n+1):
+	if (n%i==0):
+		print(i)
