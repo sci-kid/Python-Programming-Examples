@@ -141,3 +141,15 @@ print("the divisors of the integer are:")
 for i in range(1, n+1):
 	if (n%i==0):
 		print(i)
+
+#17)The program takes a number n and prints and computes the series “1+2+…+n=”:
+n=int(input("enter the number:"))
+a=[]
+for i in range(1,n+1):
+    print(i,sep='',end='')
+    if (i<n):
+        print("+",sep='',end='')
+    a.append(i)
+print("=",sum(a))
+
+#18)
