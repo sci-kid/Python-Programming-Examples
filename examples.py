@@ -152,4 +152,13 @@ for i in range(1,n+1):
     a.append(i)
 print("=",sum(a))
 
-#18)
+#18)The program takes a number n and prints the natural numbers summation pattern:
+n=int(input('enter a number:'))
+for j in range(1,n+1):
+    a=[]
+    for i in range(1,j+1):
+        print(i,sep='',end='')
+        if (i<j):
+            print('+',sep='',end='')
+        a.append(i)
+    print('=',sum(a), sep='',end='\n')
