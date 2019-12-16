@@ -162,3 +162,13 @@ for j in range(1,n+1):
             print('+',sep='',end='')
         a.append(i)
     print('=',sum(a), sep='',end='\n')
+
+#19)The program takes a number n and prints an identity matrix of the desired size:
+n=int(input('enter a number:'))
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if (i==j):
+            print('1', sep='',end=' ')
+        else:
+            print('0', sep='',end=' ')
+    print()
