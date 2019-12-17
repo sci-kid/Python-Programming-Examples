@@ -172,3 +172,8 @@ for i in range(1,n+1):
         else:
             print('0', sep='',end=' ')
     print()
+
+#20)The program takes a number n and prints an inverted star pattern of the desired size:
+n=int(input("enter a number:"))
+for i in range(n,0,-1):
+    print((n-i)*' '+i*'*')
