@@ -177,3 +177,11 @@ for i in range(1,n+1):
 n=int(input("enter a number:"))
 for i in range(n,0,-1):
     print((n-i)*' '+i*'*')
+
+#21)The program takes a range and prints prime numbers in that range using Sieve of Eratosthenes:
+n=int(input('enter a number:'))
+sieve=set(range(2,n+1))
+while sieve:
+    prime=min(sieve)
+    sieve-=set(range(prime,n+1,prime))
+    print(prime,end='\t')
