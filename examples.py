@@ -216,3 +216,10 @@ elif (dd==31 and mm==12):
 else:
     dd=dd+1
     print('the incremented date is:', dd, mm, yy,sep='/')
+
+#23)The program computes simple interest given the principle amount, rate and time:
+principle=float(input('enter amount:'))
+yy=int(input('enter years:'))
+rate=float(input('rate:'))
+interest=(principle*yy*rate)/100
+print('interest is:',interest)
