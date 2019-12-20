@@ -230,3 +230,10 @@ if (year%4==0 and year%100!=0 or year%400==0):
     print('leap year')
 else:
     print('not leap year')
+
+#25)The program reads the height in centimeters and then converts the height to feet and inches:
+cm=int(input('enter the height in centimeters:'))
+inches=0.394*cm
+feets=0.0328*cm
+print('the height in feets is:',round(feets,2))
+print('the height in inches is:',round(inches,2))
