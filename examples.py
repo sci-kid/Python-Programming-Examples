@@ -237,3 +237,24 @@ inches=0.394*cm
 feets=0.0328*cm
 print('the height in feets is:',round(feets,2))
 print('the height in inches is:',round(inches,2))
+
+#25) The program prints the sum of negative numbers, positive even numbers and positive odd numbers in a given list:
+n=int(input('enter the number of elements:'))
+b=[]
+for i in range(0,n):
+	x=int(input('enter an element:'))
+	b.append(x)
+sum1=0
+sum2=0
+sum3=0
+for j in b:
+	if (j>0):
+		if (j%2==0):
+			sum1=sum1+j
+		else:
+			sum2=sum2+j
+	else:
+		sum3=sum3+j
+print('sum of:elem>0,elem%2==0',sum1)
+print('sum of:elem>0,elem%2!=0',sum2)
+print('sum of:elem<0',sum3)
