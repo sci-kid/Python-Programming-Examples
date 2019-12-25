@@ -282,3 +282,15 @@ for i in d:
     count2=count2+1
 print('the largest even number is:',c[count1-1])
 print('the largest odd number is:',d[count2-1])
+
+#27)The program takes an integer and forms a new integer which has the number of digits at the ten’s place and the least significant digit in the one’s place:
+n=int(input('enter the number:'))
+temp=n
+k=0
+while (n>0):
+    k=k+1
+    n=n//10
+b=str(temp)
+c=str(k)
+d=c+b[k-1]
+print('new number is:',int(d))
