@@ -258,3 +258,27 @@ for j in b:
 print('sum of:elem>0,elem%2==0',sum1)
 print('sum of:elem>0,elem%2!=0',sum2)
 print('sum of:elem<0',sum3)
+
+#26)The program takes in a list and prints the largest even and largest odd number in a list:
+n=int(input('enter the number of elements:'))
+b=[]
+for i in range(0,n):
+    a=int(input('enter an element:'))
+    b.append(a)
+c=[]
+d=[]
+for i in b:
+    if (i%2==0):
+        c.append(i)
+    else:
+        d.append(i)
+c.sort()
+d.sort()
+count1=0
+count2=0
+for i in c:
+    count1=count1+1
+for i in d:
+    count2=count2+1
+print('the largest even number is:',c[count1-1])
+print('the largest odd number is:',d[count2-1])
