@@ -294,3 +294,12 @@ b=str(temp)
 c=str(k)
 d=c+b[k-1]
 print('new number is:',int(d))
+
+#28)The program takes a number and checks if it is an Armstrong number:
+n=int(input('enter the number:'))
+a=list(map(int,str(n)))
+b=list(map(lambda x:x**3,a))
+if (sum(b)==n):
+    print('It is armstrong number.')
+else:
+    print('It is not an armstrong number.')
