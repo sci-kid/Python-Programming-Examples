@@ -339,3 +339,11 @@ for i in a:
         unique.append(i)
         b.add(i)
 print('Non-duplicate list:',unique)
+
+#32)The program takes a string and checks if a substring is present in the given string:
+string=input('enter a string:')
+sub_string=input('enter a sub-string:')
+if (string.find(sub_string)==-1):
+    print('there is no sub-string in string!')
+else:
+    print('there is a sub-string in a string!')
