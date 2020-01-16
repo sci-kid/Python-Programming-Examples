@@ -325,3 +325,17 @@ if (k<=0):
     print(n,'is a prime number!')
 else:
     print(n,'isn\'t a prime number!')
+
+#31)The program takes a list and removes the duplicate items from the list:
+n=int(input('enter the number of elements:'))
+a=[]
+for i in range (0,n):
+    m=int(input('enter the element '+str(i+1)+':'))
+    a.append(m)
+b=set()
+unique=[]
+for i in a:
+    if i not in b:
+        unique.append(i)
+        b.add(i)
+print('Non-duplicate list:',unique)
