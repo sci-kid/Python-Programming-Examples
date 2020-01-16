@@ -347,3 +347,12 @@ if (string.find(sub_string)==-1):
     print('there is no sub-string in string!')
 else:
     print('there is a sub-string in a string!')
+
+#33)The program takes a dictionary and removes a given key from the dictionary:
+d={'a':1,'b':2,'c':3,'d':4}
+key=input('enter the key to be deleted(a,b,c or d):')
+if key in d:
+    del d[key]
+else:
+    print('the key doesn\'t exist!')
+print('updated dictionary:',d)
