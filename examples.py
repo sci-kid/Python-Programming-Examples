@@ -314,3 +314,14 @@ if (sum1==n):
     print('it is perfect number!')
 else:
     print('it is not a perfect number!')
+
+#30)The program takes in a number and checks if it is a prime number:
+n=int(input("enter a number:"))
+k=0
+for i in range(2,n//2+1):
+    if (n%i==0):
+        k=k+1
+if (k<=0):
+    print(n,'is a prime number!')
+else:
+    print(n,'isn\'t a prime number!')
