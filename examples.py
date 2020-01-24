@@ -356,3 +356,82 @@ if key in d:
 else:
     print('the key doesn\'t exist!')
 print('updated dictionary:',d)
+
+#34)Count of positives / sum of negatives
+"""Return an array, where the first element is the count of positives numbers 
+and the second element is sum of negative numbers.
+If the input array is empty or null, return an empty array."""
+def count_positives_sum_negatives(arr):
+    a=[]
+    x=0
+    for i in arr:
+        if i>0:
+            x+=1
+        elif i<0:
+            a.append(i)
+    if len(arr)==0:
+        return arr
+    else:
+        return [x,sum(a)]
+
+"""35)If there are one or two good ideas("good"), return 'Publish!', 
+if there are more than 2 return 'I smell a series!'.
+If there are no good ideas(only elements. named "bad" in list), as is often the case, return 'Fail!'."""
+def well(x):
+    m=0
+    for i in x:
+        if len(i)==4:
+            m+=1
+    if m==0:
+        return 'Fail!'
+    elif m==1 or m==2:
+        return 'Publish!'
+    elif m>2:
+        return 'I smell a series!'
+
+#36)Find the smallest integer in the array
+def find_smallest_int(arr):
+    arr.sort()
+    return arr[0]
+
+"""37)Invert values (Given a set of numbers, return the additive inverse of each.
+Each positive becomes negatives, and the negatives become positives.)"""
+def invert(lst):
+    return [-i for i in lst]
+
+#38)Given an array of integers, return a new array with each value doubled.
+def maps(a):
+    return [i*2 for i in a]
+
+"""39)Count the Monkeys! Given the number (n), populate an array with all numbers up to and including that number,
+but excluding zero.
+For example:
+monkeyCount(10) # --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+monkeyCount(1) # --> [1]   """
+def monkey_count(n):
+    a=[]
+    for i in range(1,n+1):
+        a.append(i)
+    return a
+
+"""40)Century From Year(The first century spans from the year 1 up to and including the year 100, 
+The second - from the year 101 up to and including the year 200, etc.)"""
+def century(year):
+    if year%100==0:
+        return year//100
+    else:
+        return ((year//100)+1)
+
+"""41)Personalized greeting
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+Use conditionals to return the proper message:
+case 	                return
+name equals owner 	'Hello boss'
+otherwise 	        'Hello guest'         """
+def greet(name, owner):
+    if (name==owner):
+        return 'Hello boss'
+    else:
+        return 'Hello guest'
+
+#42)
