@@ -446,3 +446,17 @@ Patrick Feeney => P.F
 def abbrevName(name):
     a,b=name.split(" ")
     return (a[0]+"."+b[0]).upper()
+
+"""43)Return the Nth Even Number
+nthEven(1) //=> 0, the first even number is 0
+nthEven(3) //=> 4, the 3rd even number is 4 (0, 2, 4)
+nthEven(100) //=> 198
+nthEven(1298734) //=> 2597466
+"""
+def nth_even(n):
+    i=2
+    for i in range(0,n):
+        i-=1
+        n+i
+    return n+i
+
