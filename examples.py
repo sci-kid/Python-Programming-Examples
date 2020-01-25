@@ -357,6 +357,8 @@ else:
     print('the key doesn\'t exist!')
 print('updated dictionary:',d)
 
+#----------------------https://www.codewars.com/users/Artem%20Kravchenko/completed----------------------------------
+
 #34)Count of positives / sum of negatives
 """Return an array, where the first element is the count of positives numbers 
 and the second element is sum of negative numbers.
@@ -434,4 +436,13 @@ def greet(name, owner):
     else:
         return 'Hello guest'
 
-#42)
+#42)Abbreviate a Two Word Name
+"""Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+The output should be two capital letters with a dot separating them.
+It should look like this:
+Sam Harris => S.H
+Patrick Feeney => P.F
+"""
+def abbrevName(name):
+    a,b=name.split(" ")
+    return (a[0]+"."+b[0]).upper()
