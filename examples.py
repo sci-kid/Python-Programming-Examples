@@ -476,3 +476,11 @@ def remove_char(s):
 def solution(string):
    return string[::-1]
 
+#47)Find numbers which are divisible by given number
+def divisible_by(numbers, divisor):
+    a=[]
+    for i in numbers:
+        if i%divisor==0:
+            a.append(i)
+    return a
+
