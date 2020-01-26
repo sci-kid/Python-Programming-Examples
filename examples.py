@@ -471,3 +471,8 @@ You're given one parameter, the original string. You don't have to worry with st
 def remove_char(s):
     x=len(s)
     return s[1:x-1]
+
+#46)Reversed Strings
+def solution(string):
+   return string[::-1]
+
