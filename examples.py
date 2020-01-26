@@ -357,7 +357,7 @@ else:
     print('the key doesn\'t exist!')
 print('updated dictionary:',d)
 
-#----------------------https://www.codewars.com/users/Artem%20Kravchenko/completed----------------------------------
+#----------------------https://www.codewars.com/users/Artem%20Kravchenko/completed----------------below:-->------------
 
 #34)Count of positives / sum of negatives
 """Return an array, where the first element is the count of positives numbers 
@@ -460,3 +460,14 @@ def nth_even(n):
         n+i
     return n+i
 
+"""44)Simple, remove the spaces from the string, then return the resultant string.
+"""
+def no_space(x):
+    return x.replace(" ", "")
+
+"""45)Your goal is to create a function that removes the first and last characters of a string.
+You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+"""
+def remove_char(s):
+    x=len(s)
+    return s[1:x-1]
