@@ -511,7 +511,9 @@ def string_to_array(s):
     else:
         return s.split()
 
+
 """50)You have to return the digits of this number within an array in reverse order.
+
 Unfortunately, I don't know yet how to pass this test:                     (my output)[8, 7, 7, 7, 5, 0, 1, 1] 
                                                           should equal (needed output)[0, 8, 7, 7, 7, 5, 0, 1, 1]
 """
@@ -522,3 +524,26 @@ def digitize(n):
         Reverse=Reverse*10+Reminder
         n=n//10
     return [int(i) for i in str(Reverse)]
+
+
+"""51)You will be given an vector of string(s). You must sort it alphabetically (case-sensitive!!)
+and then return the first value. The returned value must be a string, 
+and have "***" between each of its letters.You should not remove or add elements from/to the array.
+Example: two_sort(["Lets", "all", "go", "on", "holiday", "somewhere", "very", "cold"]) should return: 'L***e***t***s'
+
+Unfortunately, I don't know yet how to pass this test:                      (my output:)'J***Ds***D' 
+                                                          should equal: (needed output:)'J***D***s***D'
+"""
+def two_sort(array):
+    #array.sort(key=str.casefold) ->(use key for case-insensitive sorting)
+    array.sort()
+    j=""
+    x=array[0]
+    y=len(x)
+    for i in x:
+        if (i!=x[y-1]):
+            j+=i+"***"
+        else:
+            j+=i
+    return j
+    
