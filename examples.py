@@ -501,3 +501,12 @@ def calculate_tip(amount, rating):
         return math.ceil(amount*0.2)
     else:
         return "Rating not recognised"
+
+
+"""49)Convert a string to an array. Write a function to split a string and convert it into an array of words.
+"""
+def string_to_array(s):
+    if s=="":
+        return [""]
+    else:
+        return s.split()
