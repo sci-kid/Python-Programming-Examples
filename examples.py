@@ -484,3 +484,20 @@ def divisible_by(numbers, divisor):
             a.append(i)
     return a
 
+"""48)Tip Calculator. Complete the function, which calculates how much you need to tip
+based on the total amount of the bill and the service. 
+"""
+import math
+def calculate_tip(amount, rating):
+    if rating.lower()=="terrible":
+        return math.ceil(amount*0)
+    elif rating.lower()=="poor":
+        return math.ceil(amount*0.05)
+    elif rating.lower()=="good":
+        return math.ceil(amount*0.1)
+    elif rating.lower()=="great":
+        return math.ceil(amount*0.15)
+    elif rating.lower()=="excellent":
+        return math.ceil(amount*0.2)
+    else:
+        return "Rating not recognised"
