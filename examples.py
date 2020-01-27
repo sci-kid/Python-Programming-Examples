@@ -510,3 +510,15 @@ def string_to_array(s):
         return [""]
     else:
         return s.split()
+
+"""50)You have to return the digits of this number within an array in reverse order.
+Unfortunately, I don't know yet how to pass this test:                     (my output)[8, 7, 7, 7, 5, 0, 1, 1] 
+                                                          should equal (needed output)[0, 8, 7, 7, 7, 5, 0, 1, 1]
+"""
+def digitize(n):
+    Reverse=0
+    while n>0:
+        Reminder=n%10
+        Reverse=Reverse*10+Reminder
+        n=n//10
+    return [int(i) for i in str(Reverse)]
