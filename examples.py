@@ -601,5 +601,16 @@ def reverse_seq(n):
     print(a)
 
 
-"""55)
+"""55)lowercase_count("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~") should return ===> 3
+"""
+import re
+def lowercase_count(strng):
+    y=0
+    x=re.findall("[a-z]",strng)
+    for i in x:
+        y+=1
+    return y
+
+
+"""56)
 """
