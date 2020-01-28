@@ -644,5 +644,24 @@ def validate_usr(username):
         return False
 
 
-"""58)
+"""58)Create a function with two arguments that will return an array of the first (n) multiples of (x).
+Assume both the given number and the number of times to count will be positive numbers greater than 0.
+Return the results as an array.
+
+	count_by(1, 5) should return [1, 2, 3, 4, 5]
+	count_by(2, 5) should return [2, 4, 6, 8, 10]
+	count_by(3, 5) should return [3, 6, 9, 12, 15]
+	count_by(50, 5)should return [50, 100, 150, 200, 250]
+	count_by(100, 5)should return [100, 200, 300, 400, 500]
+"""
+def count_by(x, n):
+    temp=x
+    a=[x]
+    while x<temp*n:
+        x=x+temp
+        a.append(x)
+    return a
+
+
+"""59)
 """
