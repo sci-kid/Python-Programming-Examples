@@ -568,3 +568,27 @@ def likes(names):
         return names[0]+', '+names[1]+' and '+names[2]+' like this'
     elif x>=4:
         return names[0]+', '+names[1]+' and '+str(x-2)+' others like this'
+
+
+"""53)valid_parentheses("  (")#,False)
+valid_parentheses(")test")#,False)
+valid_parentheses("")#,True)
+valid_parentheses("hi()()")#,True)
+valid_parentheses("hi(hi)()")#,True)
+"""
+def valid_parentheses(string):
+    x=0
+    y=0
+    for i in string:
+        if i=='(':
+            x+=1
+        elif i==')':
+            y+=1
+    if x==y:
+        print('True')
+    else:
+        print('False')
+	
+	
+"""54)
+"""
