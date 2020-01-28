@@ -677,5 +677,16 @@ def correct(string):
     return string
 
 
-"""60)
+"""60)Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+"""
+def replace_exclamation(s):
+    x=['a','e','i','o','u','A','E','I','O','U']
+    for j in range(0,10):
+        for i in s: 
+            if i==x[j]:
+                s=s.replace(i,"!")
+    print(s)
+
+
+"""61)
 """
