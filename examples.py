@@ -622,3 +622,27 @@ def array_madness(a,b):
         return True
     else:
         return False
+
+
+"""57)Write a simple regex to validate a username. Allowed characters are:lowercase letters,numbers,underscore.
+Length should be between 4 and 16 characters (both included).
+validate_usr('asd43_34') should be equal to: True."""
+import re
+def validate_usr(username):
+    username=username.lower()
+    l=0
+    q = re.findall("\w", username)
+    for i in q:
+        l+=1
+    e=0
+    x = re.findall("\s", username)
+    for t in x:
+        e+=1
+    if l>=4 and l<=16 and e==0:
+        return True
+    else:
+        return False
+
+
+"""58)
+"""
