@@ -612,5 +612,13 @@ def lowercase_count(strng):
     return y
 
 
-"""56)
+"""56)array_madness([4, 5, 6], [1, 2, 3]) => True #because 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+Unfortunately, I don't know how to pass failed remaining tests:  Passed: 630 tests, Failed: 47 tests.
 """
+def array_madness(a,b):
+    x=[i**2 for i in a]
+    y=[i**3 for i in b]
+    if x>y:
+        return True
+    else:
+        return False
