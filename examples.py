@@ -663,5 +663,19 @@ def count_by(x, n):
     return a
 
 
-"""59)
+"""59) Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+
+    S is misinterpreted as 5
+    O is misinterpreted as 0
+    I is misinterpreted as 1
+
+"""
+def correct(string):
+    string=string.replace("5", "S")
+    string=string.replace("0", "O")
+    string=string.replace("1", "I")
+    return string
+
+
+"""60)
 """
