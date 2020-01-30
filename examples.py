@@ -688,5 +688,22 @@ def replace_exclamation(s):
     print(s)
 
 
-"""61)
+"""61)Get rid of numbers ending with zeros. Only the ending ones.
+	no_boring_zeros(1450) should be equal 145
+	no_boring_zeros(960000) should be equal 96
+	no_boring_zeros(1050) should be equal 105
+	no_boring_zeros(-1050) should be equal -105
+	no_boring_zeros(0) should be equal 0
+"""
+def no_boring_zeros(n):
+    if n!=0:
+        while n%10==0:
+            n=n//10
+    else:
+        n=0
+    return n
+
+
+"""62)
+
 """
