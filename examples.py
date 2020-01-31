@@ -705,7 +705,8 @@ def no_boring_zeros(n):
 
 
 """62) find_difference([3, 2, 5], [1, 4, 4]) should be equal to 14
-       find_difference([9, 7, 2], [5, 2, 2]) should be equal to 106  (find the difference of the cuboids' volumes)"""
+       find_difference([9, 7, 2], [5, 2, 2]) should be equal to 106  (find the difference of the cuboids' volumes)
+       """
 def find_difference(a, b):
     t1=1
     for i in a:
@@ -716,7 +717,19 @@ def find_difference(a, b):
     return abs(t1-t2)
 
 
-"""63)
+"""63)	add_length('apple ban') => ["apple 5", "ban 3"]
+        add_length('you will win') => ["you 3", "will 4", "win 3"]
+"""
+def add_length(str_):
+    str_=str_.split()
+    a=[]
+    for i in str_:
+        l=len(i)
+        n=i+" "+str(l)
+        a.append(n)
+    return a
+
+
+"""64)
 
 """
-
