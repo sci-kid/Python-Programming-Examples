@@ -704,6 +704,19 @@ def no_boring_zeros(n):
     return n
 
 
-"""62)
+"""62) find_difference([3, 2, 5], [1, 4, 4]) should be equal to 14
+       find_difference([9, 7, 2], [5, 2, 2]) should be equal to 106  (find the difference of the cuboids' volumes)"""
+def find_difference(a, b):
+    t1=1
+    for i in a:
+        t1=t1*i
+    t2=1
+    for i in b:
+        t2=t2*i
+    return abs(t1-t2)
+
+
+"""63)
 
 """
+
