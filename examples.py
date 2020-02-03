@@ -779,6 +779,34 @@ def evil(n):
         return "It's Odious!"
 
 
-"""66)
+
+"""66) Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+
+Example:
+
+Input:
+
+'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+Output:
+
+'alpha beta gamma delta'
+
+remove_duplicate_words("my cat is my cat fat") should be equal to "my cat is fat"
+"""
+
+def remove_duplicate_words(s):
+    x=s.split()
+    rep_d=[]
+    for num in x:
+        if num not in rep_d:
+            rep_d.append(num)
+    new=" "
+    return new.join(rep_d)
+
+
+
+"""67)
 
 """
+
