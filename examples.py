@@ -762,6 +762,23 @@ def check_exam(arr1,arr2):
         return s
 
 
-"""65)
+"""65)The number n is Evil if it has an even number of 1's in its binary representation.
+The number n is Odious if it has an odd number of 1's in its binary representation.
+You have to write a function that determine if a number is Evil or Odious, 
+function should return "It's Evil!" in case of evil number and "It's Odious!" in case of odious number.
+"""
+def evil(n):
+    bin_str=bin(n)
+    count=0
+    for i in str(bin_str):
+        if i=="1":
+            count+=1
+    if count%2==0:
+        return "It's Evil!"
+    else:
+        return "It's Odious!"
+
+
+"""66)
 
 """
