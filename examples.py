@@ -806,7 +806,30 @@ def remove_duplicate_words(s):
 
 
 
-"""67)
+"""67) Given two arrays a and b write a function comp(a, b) that checks whether the two arrays have the "same" elements,
+with the same multiplicities. "Same" means, here, that the elements in b are the elements in a squared, 
+regardless of the order. Valid arrays a = [121, 144, 19, 161, 19, 144, 19, 11] b = [121, 14641, 20736, 361, 25921, 361, 20736,
+361] comp(a, b) returns true because in b 121 is the square of 11, 14641 is the square of 121, 20736 the square of 144,
+361 the square of 19, 25921 the square of 161, and so on. """
 
-"""
+import math
+def comp(array1, array2):
+    count=0
+    if array1!=None and array2!=None:
+        array1=list(set(array1))
+        array2=list(set(array2))
+        for i in range(len(array1)):
+            for j in range(len(array2)):
+                if array2[j]!=math.pow(array1[i],2):
+                    count+=0
+                elif array1[i]==math.sqrt(array2[j]):
+                    count+=1
+        if count==len(array2):
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
 
