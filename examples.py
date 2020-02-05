@@ -833,3 +833,53 @@ def comp(array1, array2):
 
 
 
+"""68)If s is a palindrome, then s==(reversed s)"""
+
+def check_if_palindrome(s):
+	#my first answer:
+	if (s[::-1]==s):
+	    return True
+	else:
+	    return False
+	#my second answer:
+	"""str=""
+	for i in s:
+	    str=i+str
+	if (str==s):
+	    return True
+	else:
+	    return False"""
+	
+	
+"""69) I have to find the three largest elements in the given list"""
+def three_largest_in_the_list(l):
+	l.sort()
+	length=len(l)
+	if length==2:
+	    return [l[length-2],l[length-1]]
+	elif length!=0:
+	    return [l[length-3],l[length-2],l[length-1]]
+	else:
+	    return []
+
+
+"""70) I have an encoded Morse sequence. I have to decode the given sequence into English. Characters are separated by a space.
+Incorrect code I have to replace with a '-'.    """
+def decode_morse(l):
+	m={'.-':'A','-...':'B','-.-.':'C','-..':'D','.':'E','..-.':'F','--.':'G','....':'H','..':'I','.---':'J','-.-':'K','.-..':'L','--':'M','-.':'N','---':'O','.--.':'P','--.-':'Q','.-.':'R','...':'S','-':'T','..-':'U','...-':'V','.--':'W','-..-':'X','-.--':'Y','--..':'Z'}
+	res=[]
+	for i in l.split(' '):
+	    res.append(m.get(i))
+	str1=''.join(str(i) for i in res)
+	s=str1.lower()
+	if l=="":
+	    s=s.replace('none','')
+	else:
+	    s=s.replace('none','-')
+	return s
+
+
+
+"""71)
+
+"""
