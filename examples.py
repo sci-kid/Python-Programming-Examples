@@ -880,6 +880,48 @@ def decode_morse(l):
 
 
 
-"""71)
+"""
+71) The zombies start at range metres, and move at 0.5 metres per second.
+Each second, you first shoot one zombie, and then the remaining zombies shamble forwards another 0.5 metres.
+If any zombies manage to get to 0 metres, you get eaten. If you run out of ammo before shooting all the zombies,
+you'll also get eaten.
+
+zombie_shootout(3, 10, 10) should be equal to "You shot all 3 zombies."
+zombie_shootout(100, 8, 200) should be equal to "You shot 16 zombies before being eaten: overwhelmed."
+zombie_shootout(50, 10, 8) should be equal to "You shot 8 zombies before being eaten: ran out of ammo."
+"""
+
+def zombie_shootout(zombies, distance, ammo):
+    temp=zombies
+    while zombies>0 and distance>0 and ammo>0:
+        zombies-=1
+        distance-=0.5
+        ammo-=1
+    if zombies==0:
+        #print("{}\n{}\n{}\n".format(exponential(5)))
+        return "You shot all {} zombies.".format(temp)
+    elif distance==0:
+        return "You shot {} zombies before being eaten: overwhelmed.".format(temp-zombies)
+    elif ammo==0:
+        return "You shot {} zombies before being eaten: ran out of ammo.".format(temp-zombies)
+
 
 """
+72) create a method that can determine how many letters and digits are in a given string
+
+"""
+
+def count_letters_and_digits(s):
+    count=0
+    for i in s:
+        if i.isdigit() or i.isalpha():
+            count+=1
+    return count
+
+
+"""
+73) 
+
+"""
+
+
