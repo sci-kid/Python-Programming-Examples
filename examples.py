@@ -898,7 +898,6 @@ def zombie_shootout(zombies, distance, ammo):
         distance-=0.5
         ammo-=1
     if zombies==0:
-        #print("{}\n{}\n{}\n".format(exponential(5)))
         return "You shot all {} zombies.".format(temp)
     elif distance==0:
         return "You shot {} zombies before being eaten: overwhelmed.".format(temp-zombies)
