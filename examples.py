@@ -919,8 +919,27 @@ def count_letters_and_digits(s):
 
 
 """
-73) 
+73) pattern(5) should be equal to "1\n22\n333\n4444\n55555"
 
 """
 
+def pattern(n):
+    if n>0:
+        z=''
+        for i in range(n):
+            x=i+1
+            y=x*str(x)
+            if (i+1)!=n:
+                z+=y+'\n'
+            else:
+                z+=y
+    else:
+        return ''
+    return z
 
+
+
+"""
+74)
+
+"""
