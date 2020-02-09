@@ -950,7 +950,20 @@ def litres(time):
 
 
 """
-75)
+75) The exclusive or (xor(a,b)) have to evaluate two booleans. It then returns true if exactly one of the two expressions
+are true, false otherwise.
+"""
+def xor(a,b):
+    if a or b:
+        if a==b:
+            return False
+        else:
+            return True
+    else:
+        return False
+
 
 """
+76) 
 
+"""
