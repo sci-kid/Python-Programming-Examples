@@ -964,6 +964,22 @@ def xor(a,b):
 
 
 """
-76) 
+76) even_chars("") should be equal to ""            (if there're empty string)
+    even_chars("abc") should be equal to "ac"       (if there're three characters)
+    even_chars("abc abc") should be equal to "acac" (if with spaces)
+"""
+def even_chars(s):
+    """Return only odd characters from substrings"""
+    s=list(s.split(" "))
+    x=''
+    for i in s:
+        for j in range(len(i)):
+	    if j%2==0:
+	        x+=i[j]
+    return x
+
+
+"""
+77)
 
 """
